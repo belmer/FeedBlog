@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+	<link rel="stylesheet" type="text/css" href="css/docs.css"/>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+	<script type="text/javascript" src="http://yourjavascript.com/1367225091/jquery-feed-min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/src-min/ace.js"></script>
+
+	<script type="text/javascript" src="app.js"></script>
+
+	<script type="text/html" id="rssTtemplate">
+
+		<form class="bs-docs-example form-inline feedForm">
+			<div class="control-group">
+				<div class="input-prepend input-append">
+				  <span class="add-on">title: </span>
+				  <input class="span9" id="appendedPrependedInput" type="text" value="<!=title!>">
+				</div>
+
+			</div>	
+			<div class="control-group">
+				<div class="input-prepend input-append">
+				  <span class="add-on">source: </span>
+				  <input class="span5" id="appendedPrependedInput" type="text" value="<!=feedTitle!>">
+				</div>
+			</div>
+		</form>
+		
+		<pre class="prettyprint">
+			<div class="control-group" style="margin:0 20px 0 20px;">
+				<textarea rows="10" class="codeArea"><!=content!><br/><p>via: <a href="<!=feedLink!>"><!=feedTitle!></a></p></textarea>
+			</div>
+		</pre>
+		
+	</script>
+	<title>Feed Blog</title>
+</head>
+
+<body>
+	<div class="container" id="feed-container">
+		<!-- Contents here -->
+	</div>
+</body>
+</html>
